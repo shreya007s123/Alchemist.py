@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALCHEMIST.PY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <h1 class="game-title">ALCHEMIST.PY</h1>
+        <button id="start-btn">[START GAME]</button>
+    </div>
+
+    <div id="loading-screen" style="display: none;">
+        <div class="loading-content">
+            <p id="loading-message">Transmuting lead into gold...</p>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="game-ui" style="display: none;">
+        
+        <div id="the-cat"></div> 
+
+        <div id="lock-overlay" style="display: none;">
+            <div class="monitor-container">
+                <img src="lock.png" class="monitor-frame" alt="Monitor Frame">
+
+                <div id="terminal-screen">
+                    <div id="typewriter-riddle" class="pixel-text"></div>
+                    
+                    <div id="prompt-container" style="display: none;">
+                        <p class="pixel-text">Print the answer:</p>
+                        <div class="input-line">
+                            <span class="pixel-text">>>> </span>
+                            <input type="text" id="python-input" spellcheck="false" autocomplete="off" autofocus>
+                        </div>
+                        <button id="submit-pass" style="margin-top: 10px;">PRINT ANSWER</button>
+                    </div>
+
+                    <div id="typewriter-feedback" class="pixel-text"></div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="dialogue-box">
+             <div class="speaker-name">The Cat</div>
+             <div id="typewriter-text"></div>
+        </div>
+
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>

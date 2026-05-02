@@ -5,7 +5,7 @@ const levelData = {
         "Greetings, Apprentice.",
         "You have entered the Alchemist's Domain...",
         "To cross this line, you must first prove your wit.",
-        "Click on the lock, solve the riddle, and print the password."
+        "Click on the crystal, solve the riddle, to open the gates."
     ],
     background: "assets/level1/doorZoom.png",
     riddle: "I have whiskers and a tail. I am black from head to toe. I sit upon your porch, and say 'Meow'. What am I?"
